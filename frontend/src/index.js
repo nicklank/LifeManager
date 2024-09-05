@@ -1,18 +1,3 @@
-// src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { CalendarProvider } from './components/CalendarContext'; // Import the CalendarProvider
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <CalendarProvider>
-      <App />
-    </CalendarProvider>
-  </React.StrictMode>
-);
-
-reportWebVitals();
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ec4cc7a2fb212649d4e4ea4d99a9a3c62744644e5aa92d3b4c08285a3435e31
+size 484
