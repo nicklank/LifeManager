@@ -1,0 +1,61 @@
+.adaptive-calendar-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.adaptive-calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: ; /* Ensures columns maintain their widths */
+}
+
+.adaptive-calendar-table th,
+.adaptive-calendar-table td {
+    border: 1px solid #6b6565;
+    padding: 8px;
+    text-align: left;
+}
+
+.adaptive-calendar-table th {
+    background-color: #dfd7cc;
+    font-weight: bold;
+}
+
+.time-slot {
+    padding: 5px;
+    vertical-align: top; /* Ensures the time is aligned at the top */
+    background-color: #;
+    width: 20px; /* Adjust this percentage to change the width of the time column */
+    height: 35px;
+}
+
+.task-slot {
+    padding: 10px;
+    min-height: 50px; /* Adjust this to fit the number of tasks */
+    background-color: #;
+    width: 70%; /* Adjust this percentage to change the width of the task column */
+}
+
+.task-item {
+    background-color: #dfd7cc;
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.task-item.completed span {
+    text-decoration: line-through; /* Only line-through the text */
+    color: gray;
+}
+
+/* Highlight time slots during drag-over */
+.time-slot.drag-over {
+    background-color: #e0e0e0;
+}
+
+.task-item.completed span {
+    text-decoration: line-through; /* Only line-through the text */
+    color: gray;
+}

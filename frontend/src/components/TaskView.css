@@ -1,0 +1,77 @@
+.task-view-container {
+    padding: 20px;
+}
+
+.task-table {
+    display: table;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.task-table-header {
+    display: table-header-group;
+    font-weight: bold;
+}
+
+.task-table-row {
+    display: table-row;
+}
+
+.task-table-cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #6b6565;
+    vertical-align: top;
+}
+
+.date-cell {
+    width: 10%; /* Adjust as needed */
+    text-align: center;
+}
+
+.tasks-cell {
+    width: calc(100% - 50px); /* Adjust to fit the remaining width */
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    position: relative; /* To position the delete button correctly */
+}
+
+.task-item.completed span {
+    text-decoration: line-through; /* Only line-through the text */
+    color: gray;
+}
+
+.task-input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.task-input-container input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.task-input-container button {
+    padding: 5px 10px;
+}
+
+.delete-task-button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    position: absolute; /* Positioning to avoid affecting text */
+    right: 0;
+}
